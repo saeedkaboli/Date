@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        img{
+            display: none;
+        }
+       @media screen  and (min-width:0px) and (max-width:500px){
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+        body,html{
+            width: 100%;
+            height: 100%;
+            transition: 1s;
+          
+        }  
+        div,a,img{
+            display:block;
+        }
+       #All{
+           width: 100%;
+           height: 100%;
+           /* border: 10px solid red; */
+           position: relative;
+           overflow: hidden;
+       }
+       #cover{
+           width: 200%;
+           height: 100%;
+           position: absolute;
+           background-image: url(img/day-and-night-vector-9778459.jpg);
+           background-size:cover;
+           background-repeat: no-repeat;
+           left:0;
+           transition: 1s;
+       }
+       }
+       
+    </style>
+</head>
+<body onload="Scan()">
+    <div id="All">
+        <div id="cover"></div>
+    </div>
+</body>
+<script src="All.js"></script>
+</html>
